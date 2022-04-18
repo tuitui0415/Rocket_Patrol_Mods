@@ -8,6 +8,7 @@
 //Redesign the game's artwork,UI and sound [60]
 //Simultaneous two-player mode[30]
 //create a new sapceship type with new artworks that's smaller, moves faster ,and worth more points[20]
+//Create new artwork for all of the in-game assets (rocket, spaceships, explosion) (20) 
 
 let config = {
     type: Phaser.CANVAS,
