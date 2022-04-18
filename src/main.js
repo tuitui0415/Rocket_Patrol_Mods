@@ -1,3 +1,14 @@
+//Yunhan Wei
+//Project: Hunting
+//4/18/22
+//Project took ~12 hours
+//Source: All did myself
+
+//Points Breakdown
+//Redesign the game's artwork,UI and sound [60]
+//Simultaneous two-player mode[30]
+//create a new sapceship type with new artworks that's smaller, moves faster ,and worth more points[20]
+
 let config = {
     type: Phaser.CANVAS,
     width: 640,
