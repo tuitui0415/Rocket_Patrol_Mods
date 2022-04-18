@@ -8,6 +8,8 @@ class Menu extends Phaser.Scene {
         this.load.audio('sfx_select', './assets/choose.wav');
         this.load.audio('sfx_explosion', './assets/whine.wav');
         this.load.audio('sfx_rocket', './assets/shoot.wav');
+        this.load.image('tree', 'assets/tree.png');
+        this.load.image('bow_1', 'assets/bow_1.png');
     }
 
     create() {
@@ -32,7 +34,8 @@ class Menu extends Phaser.Scene {
         menuConfig.backgroundColor = '#692a27';
         menuConfig.color = '#fafafa';
         this.add.text(game.config.width/2, game.config.height/2 + 2*borderUISize + 2*borderPadding, 'Press ← for Novice or → for Expert', menuConfig).setOrigin(0.5);
-
+        this.add.image(game.config.width/4, game.config.height/2 + 4*borderUISize + 4*borderPadding, 'tree').setOrigin(0.5);
+        this.add.image(game.config.width/1.3, game.config.height/8 + borderUISize -10 , 'bow_1').setOrigin(0.5);
         // define keys
         keyLEFT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.LEFT);
         keyRIGHT = this.input.keyboard.addKey(Phaser.Input.Keyboard.KeyCodes.RIGHT);
